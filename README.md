@@ -71,3 +71,21 @@ Chessmen | English mnemonic | black (capital) | red (lowercase)
 車 / 俥 | [C]hariot | C | c
 砲 / 炮 | Ca[N]non | N | n
 卒 / 兵 | [S]oldier | S | s
+
+2. Symbol example:            
+`--------- #This is the boundary of THE River`            
+`@LAST_MOVER = BLACK #the last move is black`            
+`#This is a comment of one full line`
+
+#### Chessmoveeq            
+1. Each line shall follow the following rules: `[initial party x]` `[initial party y]` `[target party x]` `[target party y]`           
+2. Origin of coordinate system: for the black square, it is the upper left corner of the chessboard, for the Red Square, it is the lower right corner of the chessboard, and the origin coordinate (1,1)            
+3. After all lines are finished, end the file with a new line            
+4. Resolution: the default resolution is to the end of the file. If an invalid step is encountered, skip the invalid step and continue to execute, and prompt the user the specific location and content of the invalid step            
+#### An example of the Chinese
+Red: soldier at line7 moves into line1: 7 4 7 5            
+Black: Gun 2 flat move to 3:  2 3 3 3
+###### Storage example            
+`@TOTAL_STEP=2 @@`            
+`7 4 7 5`            
+`2 3 3 3`
