@@ -55,4 +55,19 @@ The chessboard covers the whole chessboard by arranging buttons (JButton) at eac
 - `C,s,SH,J,m,P,x` the running rules of each chess piece, inherit the chess class, and have two methods of check and move          
 - `/image/` store pictures of chessboard and pieces            
 - `/pvedata/` store some common chess games as man-machine battle data            
-- `/save/` save the chess game and chess manual required by the user            -/ audio / store background music
+- `/save/` save the chess game and chess manual required by the user            
+- `/audio/` store background music
+
+### About storage and reading            
+#### Chessboard            
+1. A single English character is used to represent a chess piece, with black capital and red lowercase. See the table below for details.
+
+Chessmen | English mnemonic | black (capital) | red (lowercase)
+:---- |:---- |:---- |:----
+將 / 帥 | [G]eneral | G | g
+士 / 仕 | [A]dvisor | A | a
+象 / 相 | [E]lephant | E | e
+馬 / 傌 | [H]orse | H | h
+車 / 俥 | [C]hariot | C | c
+砲 / 炮 | Ca[N]non | N | n
+卒 / 兵 | [S]oldier | S | s
