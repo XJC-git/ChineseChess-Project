@@ -2,14 +2,14 @@
 #中国象棋 - UDP局域网对战/低级人工智障/悔棋/存储棋谱/加载棋谱/UDP LAN battle / low level artificial mental retardation / regret chess / store #chess manual / load chess manual
 ### 简介
 棋盘通过在每一个点布局按钮（JButton）的方式覆盖整个棋盘，通过刷新按钮的图片背景达到移动棋子等目的。
-- ChessFrame  启动WelcomWindow，打开欢迎界面
-- WelcomWindow  加载欢迎页面，通过面板上不同的按钮开启不同种类的棋盘
-- ChessBoard 功能实现的代码都在这里
-- c,s,sh,j,m,p,x  每一个象棋棋子的运行规则，继承chess类，拥有check和move两个方法
-- /Image/ 存储棋盘和棋子的图片
-- /PVEdata/ 存储一些常见棋局作为人机对战数据
-- /save/ 存储用户要求的棋局和棋谱
-- /Audio/ 存储背景音乐
+- `ChessFrame`  启动WelcomWindow，打开欢迎界面
+- `WelcomWindow`  加载欢迎页面，通过面板上不同的按钮开启不同种类的棋盘
+- `ChessBoard` 功能实现的代码都在这里
+- `c,s,sh,j,m,p,x`  每一个象棋棋子的运行规则，继承chess类，拥有check和move两个方法
+- `/Image/` 存储棋盘和棋子的图片
+- `/PVEdata/` 存储一些常见棋局作为人机对战数据
+- `/save/` 存储用户要求的棋局和棋谱
+- `/Audio/` 存储背景音乐
 
 ### 关于存储和读取
 #### 棋盘(.chessboard)
@@ -30,7 +30,6 @@
 `@LAST_MOVER=BLACK # 最后一次移动方为黑方  `   
 ` #这是长度为一整行的注释 `
 
-3.示例：
 
 
 #### 棋谱(.chessmoveseq)
@@ -48,3 +47,12 @@
 `2 3 3 3`
 
 
+
+### Brief introduction            
+The chessboard covers the whole chessboard by arranging buttons (JButton) at each point, and moves the chessboard by refreshing the picture background of the button.            
+- `Chessframe` starts welcomwindow and opens the welcome interface            
+- `Welcomewindow` loads the welcome page, and opens different kinds of chessboards through different buttons on the panel            -Here are all the codes of chessboard function implementation            
+- `C,s,SH,J,m,P,x` the running rules of each chess piece, inherit the chess class, and have two methods of check and move          
+- `/image/` store pictures of chessboard and pieces            
+- `/pvedata/` store some common chess games as man-machine battle data            
+- `/save/` save the chess game and chess manual required by the user            -/ audio / store background music
